@@ -8,7 +8,7 @@ url = 'https://stats.nba.com/stats/leaguedashteamstats?Conference=&DateFrom=&Dat
  
 
 def get_table_from_url(url): 
-    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'} 
+    headers = {'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:64.0) Gecko/20100101 Firefox/64.0"} 
     response = requests.get(url, headers=headers) 
     json_obj = response.text 
     d = json.loads(json_obj) 
